@@ -1,1 +1,70 @@
 
+
+## Mosmed
+1. Podstawowe informacje o bazie danych: rok powstania, źródła danych, liczba danych itp.
+
+    Dane były zebrane od 01.03 do 25.04 2020r w szpitalach miejskich w Moskwie w Rosji. Tomografie są anonimowe. Jest 1110 zdjęć. 42% to mężczyźni 56% to kobiety. Pacjenci mają od 18 do 97 lat. Mediana wieku to 47 lat.  
+
+    Dane są podzielone na 4 kategorie: : CT-0 – 254 (22,8%), CT-1 – 684 (61,6%), CT-2 – 125 (11,3%), CT-3 – 45 (4,1%), CT-4 – 2 (0,2%). 
+
+    Dane są w formacie NIfti. 
+
+    Dla 50 zdjęć zanotowano również maski. 
+
+2. Jakie istotne informacje są w artykule, a nie widać tego w bazie danych?
+	
+    W artukule mamy informacje o min/max/median od wieku. 
+    
+3. Jakie informacje dotyczące bazy danych nie zostały przedstawione w artykule? Czy mogło to być zrobione specjalnie? Uzasadnij.
+
+    Wszytskie informacje zostały zawarte w artykule. 
+	
+4. Jakie artykuły korzystały z tej bazy danych? Jakie zadania były wykonywane (klasyfikacja, segmentacja, detekcja itp.)? Jakie wyniki trenowania zostały osiągnięte (jeśli nie była to jedyna baza danych, to wypisz inne tak, by dało się je zidentyfikować)?
+
+    * COVID-19 Detection in Computed Tomography Images with 2D and 3D Approaches - https://arxiv.org/pdf/2105.08506.pdf. 
+    
+    Badanie omawia tworzenie modelu klasyfikacji. Model miałby predyktować, czy pacjent jest chory na Covid-19. Wynik AUC modelu na bazie danych Mosmed wynosi 0.99. Oprócz bazy Mosmed zostały również użyte bazy: CC-19; BIMCV-COVID-19; COVID-CT-MD; HKBU-HPML-COVID-19; IST-C. 
+    
+
+## Reflacx
+1. Podstawowe informacje o bazie danych: rok powstania, źródła danych, liczba danych itp.
+
+    Dane były zebrane w trzech fazach. W pierwszych dwóch fazach pięciu radiologów analizowało kolejno 59 i 50 tych sasmych zdjęć CXR. W drugiej fazie dodatkowo ulepszono oznakowania danych. W trzeciej fazie tych samych pięciu radiologów przeanalizowała 500 zdjęć każdy. 
+    
+    Pierwsza faza odbywała się od 11 lisopada 2020 do 4 stycznia 2021, druga od 1 marca 2021 do 11 marca 2021, a trzecia od 24 marca 2021 do 7 czerwca 20212. Sesja, w której były zbierane dane średnio trwała 2.21h, gdzie najdłużej były to 3.93h, a najkrócej 0.2h.
+
+    Baza posiada 3052 przypadków. Użyto 2616 unikatowych zdjęć CXR. 3052 przypadków posiadało dane o śledzeniu ruchu oka. 
+    
+    Zdjęcia obserwowane przez radiologów były z bazy danych MIMIC-CXR. Zostały użyte jedyne zdjęcia, które miały informacje o tym, czy są "PA", czy "AP". Przefiltrowano również zdjęcia, które były na boku, przekrzywione, bądź przewrócone poziomo. Wzięto 20% danych z grupy testowej danych MIMIC-CXR oraz 80% z innych grup tej bazy. 
+    
+    Opisane jest również jak odbywała się sesja badania zdjęć. Były rejestrowane poruszanie się oczu radiologa oraz jego wypowiedzi. Do zbierania informacji stworzono specjany interfejs, który mozna znaleźć na stronie:https://github.com/ricbl/eyetracking. Lekarz mógł przybliżać zdjęcie oraz nim poruszać. Można było rysować miejsca z anomaliami płuc. Można było również poprawiać tekst transkrypcji, która na żywo rejestrowała diagnozę lekarza. 
+    
+    Do zbierania informacji o oku użyto urządzenia Eyelink 1000 Plus, 27 calowego monitora BenQ PD2700U oraz mikrofonu PowerMic II. 
+	
+    Podano również niepewności urządzeń. Średni błąd kalibracji wynosił 0.43&pm;0.02;&deg;(max 2.79&deg;) w pierwszej fazie badań, 0.43&pm;0.03;&deg;(max 1.09&deg;) w drugiej i 0.44&pm;0.01;&deg;(max 1.5&deg;) w trzeciej. 
+    
+    Opisane również są pewne ograniczenia badań: 
+    * W badaniu używany był jeden monitor, gdzie w warunkach klinicznych jest wykorzystywane wiele. 
+    * W warunkach klinicznych diagnoza jest często modyfikowana po pierewszej transkrypcji. Jednak ze względu na potrzebę zapisywania diagnozy wraz z czasem zostało to ograniczone. 
+    * Przez śledzeniu ruchu oka pozycja lekarza była ograniczona. W tym jest również pozycja głowy. W związku z tym lekarze nie mogli przybliżać glowy do telewizora, co skutkowało większym użyciem przybliżenia w analizie zdjęcia. Dodatkowo lekarze stwierdzali większe zmeczenie po krótszym okresie czasu. 
+    * Zostały użyte zdjęcia z jednej bazy danych, więc zdjęcia posiadają wszystkie wady zawarte w tej bazie. Oprócz tego lekarze stwierdzili, że zdjęcia są gorszej jakości niż w normalnych warunkach. 
+    * Zdjęcia wyświetlane lekarzowi na monitorze nie były orginalnej jakości ze względu na ograniczenia komputera. 
+    * Długość kalibracji wynosiła 45-60 min. Dodatkowo specjalnie wyznaczona osoba nadzorowała, czy kalibracja była udana. 
+    
+    Dane są dostępne jedynie w Physionet. 
+    
+2. Jakie istotne informacje są w artykule, a nie widać tego w bazie danych?
+
+    Nie ma informacji o niepewnościach urządzenia. Reszta informacji została zawarta w bazie, często w skróconej formie, bez dokładniejszych opsiów. 
+	
+3. Jakie informacje dotyczące bazy danych nie zostały przedstawione w artykule? Czy mogło to być zrobione specjalnie? Uzasadnij.
+
+    Wszystkie informacje zawarte w bazie danych zostały omówione w artykule. 
+	
+4. Jakie artykuły korzystały z tej bazy danych? Jakie zadania były wykonywane (klasyfikacja, segmentacja, detekcja itp.)? Jakie wyniki trenowania zostały osiągnięte (jeśli nie była to jedyna baza danych, to wypisz inne tak, by dało się je zidentyfikować)?
+
+    * Comparing radiologists’ gaze and saliency maps generated by interpretability methods for chest x-rays - https://arxiv.org/pdf/2112.11716.pdf
+    
+    Artykuł omawia tworzenia map istotności dla bazy Reflacx. Udało się uzyskać wynik 0.79 AUC dla omawianych w artykule algorytmów. 
+
+
