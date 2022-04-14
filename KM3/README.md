@@ -158,27 +158,23 @@ https://luna16.grand-challenge.org/Home/
 
 1.Podstawowe informacje o bazie danych: rok powstania, źródła danych, liczba danych itp.
 
+    Baza danych o nazwie `LIDC-IDRI` zawiera kolekcję skanów tomograficznych klatek piersiowych.  
+    Skany posiadają oznaczone uszkodzenia. Przeznaczona do wykrywania raka płuc. 1018 przypadków w bazie danych, każdy zawiera zdjęcia skanu z wykorzystaniem tomografa komputerowego, z dołączonym plikiem XML rejestrującym proces annotowania zdjęcia.  
+    Baza zawiera łącznie 244,527 zdjęć.  
+    Pierwsze wersje "testowe" tej bazy odbywały się w czerwcu 2011 roku, opublikowano wtedy pierwsze 399 przypadków, z kiedy pochodzą dane - nie znalazłem
+        
 2. Jakie istotne informacje są w artykule, a nie widać tego w bazie danych?
 
     mamy dwie ramki .csv dotyczące kandydatów na guzy, dopóki nie przeczyta się artykułu, w którym można wyczytać, że druga ramka `candidates_v2.csv` została dodana w celu redukcji fałszywych pozytywów. zawiera ona tych samych kandydatów, i więcej.
-
+    
 3. Jakie informacje dotyczące bazy danych nie zostały przedstawione w artykule? Czy mogło to być zrobione specjalnie? Uzasadnij.
 
     Poza zdjęciami, zbyt wielu informacji w bazie danych nie mamy.
 
 4. Jakie artykuły korzystały z tej bazy danych? Jakie zadania były wykonywane (klasyfikacja, segmentacja, detekcja itp.)? Jakie wyniki trenowania zostały osiągnięte (jeśli nie była to jedyna baza danych, to wypisz inne tak, by dało się je zidentyfikować)?
 
+
     http://ijdri.com/ijbbe/2017/a202010-048.pdf - detekcja z wykorzystaniem sieci neuronowych - udało się wykrywać raka płuc w 86.6% przypadków. Wykorzystano inną bazę danych(https://www.kaggle.com/c/data-science-bowl-2017), która okazała się jednak nieadekwatna, żeby odpowiednio sklasyfikować zestaw walidacyjny.
     
     
     
-    
-    
-    
-    
-    
-    
-
-
-
-
