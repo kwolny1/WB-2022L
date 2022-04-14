@@ -123,7 +123,59 @@
     Dla X-Ray:  Binary classifirers: pneumonia vs normal accuracy 92.8%, baterial vs viral 90.7%
     
     W artykule "Detecting Pneumonia in an iOS App with Create ML" również użyto klasyfikacji.
+    
 
+# siim-covid-19
+
+https://osf.io/532ek/
+link do artykułu
+
+1. Podstawowe informacje o bazie danych: rok powstania, źródła danych, liczba danych itp.
+
+Baza zawiera 10 178 wybranych losowo z szerszej grupy zdjęć X-ray klatki piersiowej, po wcześniejszym odsianiu tych, które nie mają dołączonego pliku dicom, czy tych z niewłaściwą lateralizacją. zebrane z dwóch publicznych źródeł: `MIDRC-RICORD` oraz `BIMCV`. W bazie są zdjęcia chorych na `bacterial pneumonia`, `cardiogenic pulmonary edema`, `pleural effusion`, `atelectasis`, `nodule/mass`, `interstitial lung disease`, and `pneumothorax`.   
+
+Wszystkie dane i metadane do diagnostyki obrazowej zostały de-identyfikowane przed ich dostarczeniem do tej bazy danych, mamy podział na płeć.  
+
+W bazie 22% pacjentów chorych na Covid-19 nie wykazywało żadnych oznak zapalenia płuc, 48% pacjentów z negatywnym wynikiem testu na Covid-19 miało etykietę `negative for pneumonia`.
+
+2. Jakie istotne informacje są w artykule, a nie widać tego w bazie danych?
+
+baza zawiera zdjęcia z widokiem PA i widokiem AP od przodu otrzymane i w sposób radiografii komputerowej (CX) oraz radiografii cyfrowej (DX).
+etykiety są wzajemnie wykluczające się, by zwiększyć spójność w raportach radiologicznych.
+
+3. Jakie informacje dotyczące bazy danych nie zostały przedstawione w artykule? Czy mogło to być zrobione specjalnie? Uzasadnij.
+
+Są zdjęcia tego samego pacjenta, które wyglądają identycznie - nie różnią się ani jednym pikselem, natomiast w jednym takim przypadku który badałem, jedno z dziewięciu zdjęć ma inne etykiety niż pozostałe, nie wiem właściwie dlaczego tak jest.
+
+4. Jakie artykuły korzystały z tej bazy danych? Jakie zadania były wykonywane (klasyfikacja, segmentacja, detekcja itp.)? Jakie wyniki trenowania zostały osiągnięte (jeśli nie była to jedyna baza danych, to wypisz inne tak, by dało się je zidentyfikować)?
+
+W konkursie na Kaggle baza danych wykorzystywana była do detekcji, nie znalazłem innych jej użyć.
+
+# Luna-16
+
+https://wiki.cancerimagingarchive.net/display/Public/LIDC-IDRI#1966254f633413761b746ff9e49dd8f0d5b679d  
+https://luna16.grand-challenge.org/Home/
+
+
+1.Podstawowe informacje o bazie danych: rok powstania, źródła danych, liczba danych itp.
+
+baza danych o nazwie `LIDC-IDRI` zawiera kolekcję skanów tomograficznych klatek piersiowych. Skany posiadają oznaczone uszkodzenia. Przeznaczona do wykrywania raka płuc.  
+1018 przypadków w bazie danych, każdy zawiera zdjęcia skanu z wykorzystaniem tomografa komputerowego, z dołączonym plikiem XML rejestrującym proces annotowania zdjęcia.  
+baza zawiera łącznie 244,527 zdjęć  
+Pierwsze wersje "testowe" tej bazy odbywały się w czerwcu 2011 roku, opublikowano wtedy pierwsze 399 przypadków, z kiedy pochodzą dane - nie znalazłem
+
+2. Jakie istotne informacje są w artykule, a nie widać tego w bazie danych?
+
+mamy dwie ramki .csv dotyczące kandydatów na guzy, dopóki nie przeczyta się artykułu, w którym można wyczytać, że druga ramka `candidates_v2.csv` została dodana w celu redukcji fałszywych pozytywów. zawiera ona tych samych kandydatów, i więcej.
+
+3. Jakie informacje dotyczące bazy danych nie zostały przedstawione w artykule? Czy mogło to być zrobione specjalnie? Uzasadnij.
+
+poza zdjęciami, zbyt wielu informacji w bazie danych nie mamy.
+
+4. Jakie artykuły korzystały z tej bazy danych? Jakie zadania były wykonywane (klasyfikacja, segmentacja, detekcja itp.)? Jakie wyniki trenowania zostały osiągnięte (jeśli nie była to jedyna baza danych, to wypisz inne tak, by dało się je zidentyfikować)?
+
+http://ijdri.com/ijbbe/2017/a202010-048.pdf - detekcja z wykorzystaniem sieci neuronowych - udało się wykrywać raka płuc w 86.6% przypadków. Wykorzystano inną bazę danych(https://www.kaggle.com/c/data-science-bowl-2017), która okazała się jednak nieadekwatna, żeby odpowiednio sklasyfikować zestaw walidacyjny.
+    
     
     
     
