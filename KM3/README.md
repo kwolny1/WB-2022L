@@ -160,8 +160,8 @@ https://luna16.grand-challenge.org/Home/
 1.Podstawowe informacje o bazie danych: rok powstania, źródła danych, liczba danych itp.  
 
     Baza danych o nazwie `LIDC-IDRI` zawiera kolekcję skanów tomograficznych klatek piersiowych. Skany posiadają oznaczone uszkodzenia. Przeznaczona do wykrywania raka płuc.  
-    1018 przypadków w bazie danych, każdy zawiera zdjęcia skanu z wykorzystaniem tomografa komputerowego, z dołączonym plikiem XML rejestrującym proces annotowania zdjęcia.   
-    baza zawiera łącznie 244,527 zdjęć.   
+    1018 przypadków w bazie danych, każdy zawiera zdjęcia skanu z wykorzystaniem tomografa komputerowego, z dołączonym plikiem XML rejestrującym proces annotowania zdjęcia.
+    baza zawiera łącznie 244,527 zdjęć.  
     Pierwsze wersje "testowe" tej bazy odbywały się w czerwcu 2011 roku, opublikowano wtedy pierwsze 399 przypadków, z kiedy pochodzą dane - nie znalazłem
 
 2. Jakie istotne informacje są w artykule, a nie widać tego w bazie danych?
