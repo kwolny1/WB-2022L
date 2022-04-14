@@ -156,10 +156,8 @@ etykiety są wzajemnie wykluczające się, by zwiększyć spójność w raportac
 https://wiki.cancerimagingarchive.net/display/Public/LIDC-IDRI#1966254f633413761b746ff9e49dd8f0d5b679d  
 https://luna16.grand-challenge.org/Home/  
 
-1.Podstawowe informacje o bazie danych: rok powstania, źródła danych, liczba danych itp.  
+1.Podstawowe informacje o bazie danych: rok powstania, źródła danych, liczba danych itp.
 
-    Baza danych o nazwie `LIDC-IDRI` zawiera kolekcję skanów tomograficznych klatek piersiowych.  
-    
 2. Jakie istotne informacje są w artykule, a nie widać tego w bazie danych?
 
     mamy dwie ramki .csv dotyczące kandydatów na guzy, dopóki nie przeczyta się artykułu, w którym można wyczytać, że druga ramka `candidates_v2.csv` została dodana w celu redukcji fałszywych pozytywów. zawiera ona tych samych kandydatów, i więcej.
