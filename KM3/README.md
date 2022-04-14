@@ -154,8 +154,7 @@ etykiety są wzajemnie wykluczające się, by zwiększyć spójność w raportac
 # Luna-16
 
 https://wiki.cancerimagingarchive.net/display/Public/LIDC-IDRI#1966254f633413761b746ff9e49dd8f0d5b679d  
-https://luna16.grand-challenge.org/Home/
-
+https://luna16.grand-challenge.org/Home/  
 
 1.Podstawowe informacje o bazie danych: rok powstania, źródła danych, liczba danych itp.  
 
