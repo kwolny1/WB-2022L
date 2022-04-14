@@ -1,6 +1,8 @@
 
 
 ## Mosmed
+https://arxiv.org/abs/2005.06465
+
 1. Podstawowe informacje o bazie danych: rok powstania, źródła danych, liczba danych itp.
 
     Dane były zebrane od 01.03 do 25.04 2020r w szpitalach miejskich w Moskwie w Rosji. Tomografie są anonimowe. Jest 1110 zdjęć. 42% to mężczyźni 56% to kobiety. Pacjenci mają od 18 do 97 lat. Mediana wieku to 47 lat.  
@@ -27,6 +29,8 @@
     
 
 ## Reflacx
+https://arxiv.org/abs/2109.14187
+
 1. Podstawowe informacje o bazie danych: rok powstania, źródła danych, liczba danych itp.
 
     Dane były zebrane w trzech fazach. W pierwszych dwóch fazach pięciu radiologów analizowało kolejno 59 i 50 tych sasmych zdjęć CXR. W drugiej fazie dodatkowo ulepszono oznakowania danych. W trzeciej fazie tych samych pięciu radiologów przeanalizowała 500 zdjęć każdy. 
